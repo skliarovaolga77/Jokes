@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="offer">
+				<div class="offer-main">
+					<span>MSI 2020</span>
+					<h1>Hey!</h1>
+				<p class="text">Let’s try to find a joke for you:</p>
+
+				<form id="getJoke">
+					<label>
+						<input type="radio" value="random" name="joke">Random 
+					</label>
+					<label>
+						<input type="radio" value="categories" name="joke">Categories 
+						<div class="categories"></div>
+					</label>
+					<label>
+						<input type="radio" value="search" name="joke">Search 
+						<input name="textfield"  type="text" id="searchJoke" class="searchJoke hide" placeholder="Free text search...">
+					</label>
+
+					<button class="btn">Get Joke</button>
+				</form>
+
+				<div id="jokes__wrapper" class="jokes__wrapper"></div>
+					
+
+				</div>
+				<div class="offer-favorit">
+					<div class="jokes__fav"></div>
+					<!-- <h2>Favourite</h2> -->
+
+				</div>
+				
+			</div>
+		</div>
+		
+
+
+	</header>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
